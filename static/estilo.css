@@ -1,0 +1,21 @@
+body {
+    background-color:#eef1ec;
+    margin-bottom: 40px;
+}
+
+h1 {
+    color: #0d4f4d;
+}
+
+.banner {
+	background:#0d4f4d;;
+    color:#eef1ec;
+}
+
+.top-bar-menu {
+	background-color: #0d4f4d;
+}
+
+a {
+    text-decoration: none;
+}

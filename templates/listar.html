@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <h1>Lista de pessoas</h1>
+
+    <hr>
+
+    <table>
+        <thead>
+        <tr>
+            <th>id</th>
+            <th>Nome</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for linha in pessoas %}
+            <tr>
+                <td><a href='/editar?id={{ linha.idPessoa }}'>{{ linha.idPessoa }}</a></td>
+                <td>{{ linha.nome }}</td><td><a href='/excluir?id={{ linha.idPessoa }}'>excluir</a></td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <p><a href="/inserir">Adicionar nova pessoa</a></p>
+
+
+
+{% endblock %}

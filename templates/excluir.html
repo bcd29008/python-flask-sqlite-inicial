@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <h1>Excluir pessoa</h1>
+
+
+    <form action="{{ url_for('excluir') }}" method=post>
+        <p>Você realmente deseja excluir {{ pessoa.nome }}?
+        <button type=submit>Sim</button>
+    </form>
+    <p><a href="/">voltar</a>
+
+{% endblock %}
